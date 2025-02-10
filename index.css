@@ -149,7 +149,7 @@ h2::after {
     content: '';
     display: block;
     height: 2px;
-    width: 20rem;
+    width: 100rem;
     background: var(--pink);
     margin: var(--gutter-small) 0;
 }
