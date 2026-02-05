@@ -4,7 +4,7 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initialscale=1.0">
  <link href="./index.css" rel="stylesheet" />
- <title>My Portfolio</title>
+ <title>Matéo Fernandes</title>
 </head>
 
 <body>
@@ -15,102 +15,44 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+          <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </nav>
     </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <span>Matéo Fernandes</span>
-        </h1>
-        <p>Cybersecurity enthusiast based in Luxembourg</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
+  <div class="header__text-box row">
+  <div class="header__text">
+    
+    <!-- Social icons - force position -->
+    <div style="display: flex; gap: 1.6rem; margin-bottom: 2.5rem; align-self: flex-start;">
+      <a href="https://github.com/Mateo-Fernandes" target="_blank" style="display: block;">
+        <img src="./images/github.svg" alt="GitHub" style="height: 4rem; width: 4rem; object-fit: contain;">
+      </a>
+      <a href="https://www.linkedin.com/in/mat%C3%A9o-fernandes-9b032b32b/" target="_blank" style="display: block;">
+        <img src="./images/linkedin.svg" alt="LinkedIn" style="height: 4rem; width: 4rem; object-fit: contain;">
+      </a>
+      <a href="https://tryhackme.com/p/Manji7" target="_blank" style="display: block;">
+        <img src="./images/tryhackme.svg" alt="TryHackMe" style="height: 4rem; width: 4rem; object-fit: contain;">
+      </a>
+      <a href="https://www.credly.com/users/mateo-fernandes.457eeeb1/badges#credly" target="_blank" style="display: block;">
+        <img src="./images/certificate.svg" alt="Certifications" style="height: 4rem; width: 4rem; object-fit: contain;">
+      </a>
     </div>
+
+    <h1 class="heading-primary">
+      <span>Matéo Fernandes</span>
+    </h1>
+    <p>Cybersecurity enthusiast based in Luxembourg</p>
+    <a href="#contact" class="btn btn--pink">Get in touch</a>
+  </div>
+</div>
+
   </header>
 
   <main role="main">
-
-    <!-- ***** Work ***** -->
-
-    <section class="work" id="work">
-      <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
-
-          <!-- Game of Nim -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Game of Nim</h3>
-              <p>A fun game playable with a friend or against an ai</p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>Game Development</li>
-                <li>AI</li>
-              </ul>
-              <div class="work__links">
-                <a href="https://github.com/Mateo-Fernandes/game-of-nim" target="_blank" class="link__text">
-                  See on GitHub <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/Mateo-Fernandes/game-of-nim" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Discord Music Bot -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Discord Music Bot</h3>
-              <p>A feature-rich Discord bot for playing music from YouTube in voice channels</p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>Discord.py</li>
-                <li>YouTube</li>
-              </ul>
-              <div class="work__links">
-                <a href="https://github.com/Mateo-Fernandes/discord-music-bot" target="_blank" class="link__text">
-                  See on GitHub <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/Mateo-Fernandes/discord-music-bot" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- CryptiGuard - NEW PROJECT -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>CryptiGuard</h3>
-              <p>Cybersecurity project for cryptographic security analysis and protection</p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>Cryptography</li>
-                <li>Security</li>
-              </ul>
-              <div class="work__links">
-                <a href="https://github.com/Mateo-Fernandes/CryptiGuard" target="_blank" class="link__text">
-                  See on GitHub <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/Mateo-Fernandes/CryptiGuard" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
 
     <!-- ***** About ***** -->
 
@@ -128,25 +70,164 @@
               incident response, or secure system administration.
             </p>
             
-            <!-- TryHackMe Badge -->
-            <div style="margin: 3rem 0;">
-              <h4 style="margin-bottom: 1.5rem; color: var(--white);">Cybersecurity Practice</h4>
-              <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2493880" 
-                      style="border:none; max-width: 100%;" 
-                      width="100%" 
-                      height="auto"
-                      title="TryHackMe Profile Badge">
-              </iframe>
-            </div>
-            
-            <a href="Minimalist CV Resume.pdf" class="btn" target="_blank">Download My Resume</a>
+            <a href="Minimalist CV Resume.pdf" class="btn" target="_blank" style="margin-top: 2rem;">Download My Resume</a>
           </div>
           <div class="about__photo-container">
-            <img class="about__photo" src="images/mat.jpg" width="2000" height="937px" alt="test" />
+            <img class="about__photo" src="images/mat.jpg" width="2000" height="937px" alt="Matéo Fernandes" />
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ***** Education ***** -->
+
+    <section class="education" id="education">
+      <div class="row">
+        <h2>Education</h2>
+        <div class="education__timeline">
+          
+          <!-- Timeline Item 1 -->
+          <div class="education__item">
+            <div class="education__dot"></div>
+            <div class="education__content">
+              <div class="education__date">2025 - Present</div>
+              <h3>BTS in Cybersecurity</h3>
+              <h4>Lycée Guillaume Kroll, Esch sur Alzette</h4>
+              <ul>
+                <li>Network security, ethical hacking, and system administration</li>
+                <li>Project management and technical business comunication methodologies</li>
+                <li>Linux server administration, PowerShell and Bash scripting</li>
+                <li>Python Programming</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="education__item">
+            <div class="education__dot"></div>
+            <div class="education__content">
+              <div class="education__date">2023 - 2024</div>
+              <h3>Bachelor in Applied Information Technology</h3>
+              <h4>Université du Luxembourg, Belval</h4>
+              <ul>  
+                <li>Object oriented programming with Java and Swift</li>
+                <li>Software development methodologies and version control</li>
+                <li>Computer systems architecture and operating systems</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Certifications ***** -->
+
+    <section class="certifications" id="certifications">
+      <div class="row">
+        <h2>Certifications</h2>
+        <div class="certifications__content">
+          
+          <!-- TryHackMe Badge -->
+          <div class="certifications__item">
+            <h3>Cybersecurity Practice</h3>
+            <p>Active learning and hands-on practice on TryHackMe platform, focusing on penetration testing, web security, and network exploitation techniques.</p>
+            <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2493880" 
+                    style="border:none; max-width: 100%; margin-top: 2rem;" 
+                    width="100%" 
+                    height="auto"
+                    title="TryHackMe Profile Badge">
+            </iframe>
+          </div>
+
+          <!-- Add more certifications here as needed -->
+          <!-- Example structure:
+          <div class="certifications__item">
+            <h3>Certification Name</h3>
+            <h4>Issuing Organization</h4>
+            <p>Description of certification</p>
+            <a href="#" class="btn" target="_blank">View Certificate</a>
+          </div>
+          -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Projects</h2>
+        <div class="work__boxes">
+
+          <!-- CryptiGuard - FIRST -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>CryptiGuard</h3>
+              <p>Cybersecurity project for cryptographic security analysis and protection.</p>
+              <ul class="work__list">
+                <li>Python</li>
+                <li>Cryptography</li>
+                <li>Security</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://github.com/Mateo-Fernandes/CryptiGuard" target="_blank" class="link__text">
+                  View on GitHub <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/Mateo-Fernandes/CryptiGuard" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Discord Music Bot - SECOND -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Music Bot</h3>
+              <p>A feature-rich Discord bot for playing music from YouTube in voice channels.</p>
+              <ul class="work__list">
+                <li>Python</li>
+                <li>Discord.py</li>
+                <li>YouTube</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://github.com/Mateo-Fernandes/discord-music-bot" target="_blank" class="link__text">
+                  View on GitHub <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/Mateo-Fernandes/discord-music-bot" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Game of Nim - THIRD -->
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Nim Game</h3>
+              <p>A fun turn-based game playable with a friend or against an ai.</p>
+              <ul class="work__list">
+                <li>Python</li>
+                <li>Game Development</li>
+                <li>AI</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://github.com/Mateo-Fernandes/game-of-nim" target="_blank" class="link__text">
+                  View on GitHub <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/Mateo-Fernandes/game-of-nim" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ***** Contact ***** -->
@@ -170,38 +251,47 @@
           Whether you need assistance with cybersecurity projects, network infrastructure, 
           or want to discuss security best practices, feel free to reach out. 
           I'm always eager to collaborate and learn. The quickest way to contact me 
-          is via email at fernandesmateo0@gmail.com
+          is via email ! 
         </p>
-        <a href="mailto:fernandesmateo0@gmail.com" class="btn">fernandesmateo0@gmail.com</a>
+        <a href="mailto:fernandesmateo0@gmail.com" class="btn">Contact me</a>
       </div>
     </div>
   </section>
 
   <!-- ***** Footer ***** -->
 
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/Mateo-Fernandes/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/mat%C3%A9o-fernandes-9b032b32b/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </footer>
+  <!-- ***** Footer ***** -->
+
+<footer role="contentinfo" class="footer">
+  <div class="row">
+    <ul class="footer__social-links">
+      <li class="footer__social-link-item">
+        <a href="https://github.com/Mateo-Fernandes/" title="Link to Github Profile" target="_blank">
+          <img src="./images/github.svg" class="footer__social-image" alt="Github">
+        </a>
+      </li>
+      <li class="footer__social-link-item">
+        <a href="https://www.linkedin.com/in/mat%C3%A9o-fernandes-9b032b32b/" title="Link to Linkedin Profile" target="_blank">
+          <img src="./images/linkedin.svg" class="footer__social-image" alt="Linkedin">
+        </a>
+      </li>
+      <li class="footer__social-link-item">
+        <a href="https://tryhackme.com/p/Manji7" title="Link to TryHackMe Profile" target="_blank">
+          <img src="./images/tryhackme.svg" class="footer__social-image" alt="TryHackMe">
+        </a>
+      </li>
+      <li class="footer__social-link-item">
+        <a href="https://www.credly.com/users/mateo-fernandes.457eeeb1/badges#credly" title="Link to Credly Certifications" target="_blank">
+          <img src="./images/certificate.svg" class="footer__social-image" alt="Certifications">
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
   <script src="./index.js"></script>
 </body>
-
 </html>
