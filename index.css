@@ -101,7 +101,6 @@ body {
 
 section {
     padding: var(--gutter-huge) 0;
-    border-bottom: var(--border-light);
 }
 
 img {
@@ -462,7 +461,7 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .education {
-  background: rgba(255, 255, 255, 0.02);
+  background: #141824;
 }
 
 .education__timeline {
@@ -652,7 +651,7 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .certifications {
-  background: rgba(255, 255, 255, 0.02);
+  background: #141824;
 }
 
 .certifications__content {
